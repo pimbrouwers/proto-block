@@ -1,0 +1,23 @@
+/* HERE IS WHERE YOU MAKE THE VOODOO MAGIC HAPPEN */
+
+/* SMALL SCREEN (RESOLUTION MAX: 650px) */
+@media screen and ( max-width: 41em ){
+
+}
+
+/* MEDIUM SCREEN (TABLETS / LAPTOPS) */
+@media screen and ( max-width: 61.5em ) {
+  
+
+}
+
+/* ONLY DISCREPANCIES BETWEEN SMALL & MEDIUM SCREEN GO HERE*/
+@media screen and ( min-width: 41em ) and ( max-width: 61.5em ){
+
+}
+
+/* BACK TO ORIGINAL SIZE */
+@media screen and ( min-width: 61.5em ) {
+
+}
+

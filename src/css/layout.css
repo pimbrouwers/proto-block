@@ -1,0 +1,111 @@
+/* ------------------------------------------------------------------------
+--- 960PX CONTAINER ABSTRACTED TO RELATIVE SIZING ------------------------- 
+-------------------------------------------------------------------------*/
+	
+	/* NOTE: 0.625em added to width to allow for div.block centering */
+	.container {
+		margin: 0 auto;
+		width: 60.0001em;
+	}
+
+	.full, .row { width: 100%; clear: both; }
+	.full { float: left; }	
+
+/*	blockquote {
+		padding: 0.5em 0 0.5em 1.5em;
+		margin: 0.5em 0.5em 0.5em 0;
+		border-left: 0.75em solid #555;
+		font-style: italic;
+	}
+
+	p {
+		margin-bottom: 1.5em;
+	}
+
+	.block.b2 p { font-size: 0.750em; }*/
+
+/*-------------------------------------------------------------------------
+--- FUNDAMENTAL BLOCK COMPONENTS ------------------------------------------
+-------------------------------------------------------------------------*/
+	
+	/* CAN BE USED AS COLUMN/BOX/ASIDE -- ANYTHING YOU CAN IMAGINE */
+	/* NOTE: These units contain no padding. To apply padding without destroying use div.block-content (see below) and adjust padding accordingly */
+	
+	.block {	float: left; }
+	.block div.content  { padding: 0.75em; }
+	
+	/*GUTTER BLOCKS*/
+	.block.g1  { width: 0.3125em; } /*   5px */
+	.block.g2  { width: 0.6250em; } /*  10px */
+	.block.g3  { width: 0.9375em; } /*  15px */
+	.block.g4  { width: 1.2500em; } /*  20px */
+	
+	/*  CONTAINER BLOCKS ---------------------------------------------
+	--- NOTE: numeric value refers to arithmetic to create a "row" ---
+	--- each row must equate to 12 (ex: b4 + b8 = b12) -------------*/
+	.block.b1  { width: 5.0000em; } /*  80px */ 
+	.block.b2  { width: 10.000em; } /* 160px */
+	.block.b4  { width: 20.000em; } /* 320px */
+	.block.b6  { width: 30.000em; } /* 480px */
+	.block.b8  { width: 40.000em; } /* 640px */
+	.block.b10 { width: 50.000em; } /* 900px */
+	.block.b12 { width: 60.000em; } /* 960px */
+
+/* ------------------------------------------------------------------------
+--- MEDIA QUERIES - DO NOT ADJUST -----------------------------------------
+-------------------------------------------------------------------------*/ 	
+
+	@media screen and ( max-width: 41em ){
+	  .b1 { width: 16.667% !important; }
+	  .b2 { width: 70% !important; margin: 0 15%; }
+	  .b4, .b6, .b8, .b10, .b12 { width: 100% !important; }
+	}
+	@media screen and ( min-width: 41em ) and ( max-width: 60.0001em ){
+		.b1  { width: 8.333% !important; }
+		.b2  { width: 16.667% !important; }
+	  .b4  { width: 33.333% !important; }
+	  .b6  { width: 50% !important; }
+	  .b8  { width: 66.667% !important; }
+	  .b10  { width: 83.333% !important; }
+	  .b12 { width: 100% !important; }
+
+	}
+
+	@media screen and ( max-width: 60.0em ){
+		div.container { width: 96%; min-width: 19em; max-width: 60.0001em; padding: 0 2%; }
+	}
+
+/* ------------------------------------------------------------------------
+--- FONT BUMPS (REMOVE IF EXPERIENCING PROBLEMS AT WIDTHS ABOVE 60.0em) ---
+-------------------------------------------------------------------------*/
+
+	h1 { font-size: 1.75em;}
+	h2 { font-size: 1.5em; }
+	h3 { font-size: 1.25em; }
+	h4 { font-size: 1.125em; }
+	h5 { font-size: 1em; }
+	
+	/* 1036PX FONT BUMP */
+	@media screen and ( min-width: 64.750em ) {
+	  body { font-size: 1.050em; }
+	}
+
+	/* 1100PX FONT BUMP */
+	@media screen and ( min-width: 68.750em ) {
+	  body { font-size:  1.100em; }
+	}
+
+	/* 1200PX FONT BUMP */
+	@media screen and ( min-width: 75.000em ) {
+	  body { font-size:  1.150em;  }
+	}
+
+	/* 1300PX FONT BUMP */
+	@media screen and ( min-width: 81.250em ) {
+	  body { font-size:  1.200em;  }
+	}
+
+	/* 1400PX FONT BUMP */
+	@media screen and ( min-width: 87.500em ) {
+	  body { font-size:  1.250em;  }
+	}

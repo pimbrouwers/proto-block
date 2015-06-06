@@ -1,0 +1,45 @@
+body {
+	color: #555555;
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+	letter-spacing: 0.0325em;
+}
+h1, h2 { font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif; font-weight: 700; }
+header, footer {
+	color: #ffffff;
+}
+header {
+	height: 10em;
+	margin-bottom: 0.75em;
+	background: #002330;
+}
+header h1 {
+	text-align: center;
+	font-size: 6em;
+}
+footer {
+	height: 30em;
+	margin-top: 0.75em;
+	background: #000E13;	
+}
+#content {
+	min-height: 31em;
+}
+#content div.block {
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;
+}
+
+#content div.block div.content h1 {	text-align: left; color: #00adef;}
+
+blockquote {
+	padding: 0.5em 0 0.5em 1.5em;
+	margin: 0.5em 0.5em 0.5em 0;
+	border-left: 0.75em solid #555;
+	font-style: italic;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+.block.b2 p { font-size: 0.750em; }
