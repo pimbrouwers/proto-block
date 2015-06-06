@@ -23,13 +23,14 @@ proto-block/src/
      		└── modernizr-2.5.min.js
 ```
 
+
 ## How To
 
 Using Proto Block is straight forward. Row's are designated using the "row" class. Row's are comprised of "block" elements (b1, b2, b4, b6, b8, b10, b12). A row's block elements should add up to 12 (ie: b4 - b8 or b6 - b6). By default, row's will expand to fill the entire width of the screen. To prevent full-width layouts simple wrap all rows in a "container" element, which will initalize a "golden" wrap at 960px.
 
 ### Full width prototyping (note the usage of <div class="content">..</div> for spacing purposes):
 
-```
+```html
 <div class="row">
 	<div class="block b12">
 		<div class="content"></div>
@@ -55,7 +56,7 @@ Using Proto Block is straight forward. Row's are designated using the "row" clas
 
 ###Golden-width prototyping (note the usage of <div class="content">..</div> for spacing purposes):
 
-```
+```html
 	<div class="container">
 		<div class="row">
 			<div class="block b12">
