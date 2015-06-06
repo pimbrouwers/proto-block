@@ -21,7 +21,7 @@ proto-block/src/
     └── js/
         └── libs/
      		└── modernizr-2.5.min.js
-
+```
 
 ## How To
 
@@ -51,6 +51,7 @@ Using Proto Block is straight forward. Row's are designated using the "row" clas
 		<div class="content"></div>
 	</div>
 </div>
+```
 
 ###Golden-width prototyping (note the usage of <div class="content">..</div> for spacing purposes):
 
@@ -78,3 +79,4 @@ Using Proto Block is straight forward. Row's are designated using the "row" clas
 			</div>
 		</div>
 	</div>
+```
